@@ -1,5 +1,5 @@
 public with sharing class DynamicApexExample1 {
-    public DynamicApexExample1() {
+    public Static Map<String, String> getObjectAPINameToLabelMap() {
         Map<String, String> objectAPINameToLabelMap = new Map<String, String>();
         
         //Note: Schema.SObjectType --> Schema is namespace not class
@@ -22,5 +22,6 @@ public with sharing class DynamicApexExample1 {
         for (String key : objectAPINameToLabelMap.keySet()) {
             System.debug(key + ': ' + objectAPINameToLabelMap.get(key));
         }
+        return objectAPINameToLabelMap;
     }
 }

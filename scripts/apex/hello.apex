@@ -10,3 +10,5 @@ System.debug('Hello World!');
 System.debug('My name is ' + tempvar);
 
 DynamicApexExample1 test = new DynamicApexExample1();
+
+DynamicApexExample1.getObjectAPINameToLabelMap();
